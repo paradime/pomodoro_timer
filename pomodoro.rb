@@ -8,11 +8,13 @@ if b == 'w'
 	label = gets.chomp
 	puts 'Work hard!'
 end
+system('clear')
 # Timing using countdown
 clock = Time.at(limit * 60)
 while clock != Time.at(0)
 	clock -= 1
 	sleep(1)
+	system 'clear'
 	puts clock.strftime "%M:%S"
 end
 
