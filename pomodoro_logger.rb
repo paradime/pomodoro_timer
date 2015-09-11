@@ -7,6 +7,6 @@ class PomodoroLogger
   end
 
   def write_task(task)
-    @log_file.write("#{task}\n")
+    @log_file.write("Completed #{task} at #{Time.now}\n")
   end
 end
