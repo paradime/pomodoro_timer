@@ -1,15 +1,15 @@
 class PomodoroTimer
   attr_reader :type, :clock, :viewer
-  MINUTES = 60
+  SECONDS_TO_MINUTES = 60
   def initialize(type)
     @type = type
   end
 
   def timerLength
     if @type == 'w'
-      25 * MINUTES
+      25 * SECONDS_TO_MINUTES
     elsif @type == 'r'
-      6 * MINUTES
+      6 * SECONDS_TO_MINUTES
     end
   end
 
