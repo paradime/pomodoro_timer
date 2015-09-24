@@ -47,7 +47,7 @@ class PomodoroView
     system('afplay ./OOT_Secret.wav')
     puts 'You finished your pomodoro!'
     puts "You worked on: #{@label}" unless @label.nil?
-    @logger.write_task(@label)
+    @logger.write_task(@label) unless @label.nil?
     run
   end
 end

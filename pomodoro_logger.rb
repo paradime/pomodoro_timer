@@ -18,6 +18,3 @@ class PomodoroLogger
     last_line
   end
 end
-
-logger = PomodoroLogger.new
-puts logger.get_last_item
